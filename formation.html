@@ -73,16 +73,26 @@
               </div>
 
             </div>
-<div class="reset">
+
+            <div class="reset">
             <p id="reset1" ><button type="button"  onclick ="formation(5)" class="btn btn-danger">Reset</button></p>
           </div>
 
 
 
 
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Pick a Team
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a  onclick ="getTeamInfo('1644')" class="dropdown-item" href="#">PSG</a></li>
+              <li><a   onclick ="getTeamInfo('2817')"class="dropdown-item" href="#">Barcelona</a></li>
+              <li><a  onclick ="getTeamInfo('17')" class="dropdown-item" href="#">Manchester City</a></li>
+            </ul>
+          </div>
 
-
-
+          
 
 
       <script

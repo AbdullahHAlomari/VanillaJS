@@ -14,6 +14,7 @@ function playerinfo(i){
 }
 
 
+function getTeamInfo(teamid)
 const options = {
   method: "GET",
   headers: {
@@ -22,7 +23,7 @@ const options = {
   },
 };
 
- fetch("https://footapi7.p.rapidapi.com/api/team/1644/players", options)
+ fetch("https://footapi7.p.rapidapi.com/api/team/"+teamid+"/players", options)
 .then((response) => response.json())
 .then((response) => {
     localStorage.setItem("response", JSON.stringify(response));
