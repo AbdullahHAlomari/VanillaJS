@@ -13,6 +13,7 @@ body{
 a{
     text-decoration: none;
     color: white;
+    transition: .5s;
 }
 li{
     color: white;
@@ -50,6 +51,10 @@ header ul li a:hover, .active{
     background: white;
     color: black;
 }
+body{
+    overflow-x: hidden;
+
+}
 
 .main{
     position: relative;
@@ -58,6 +63,7 @@ header ul li a:hover, .active{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .main::after{
     content: '';
@@ -87,14 +93,9 @@ header ul li a:hover, .active{
     border-color: aliceblue;
 }
 
-/* #btn{
-    color: white;
-    font-size: 30px;
-    text-transform: uppercase;
-    transform: translateY(-180px);
-    margin-top: 50%;
-    flex-direction: column;
-} */
+.btn{
+transition: .5s;
+}
 
 #img1{
     height: 2100px;
