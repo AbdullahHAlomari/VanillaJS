@@ -1,3 +1,5 @@
+
+
 function playerinfo(i){
 
   var someData= JSON.parse(localStorage.getItem("response"))
