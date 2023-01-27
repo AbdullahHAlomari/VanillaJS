@@ -1,3 +1,17 @@
+function playerinfo(i){
+
+  var someData= JSON.parse(localStorage.getItem("response"))
+
+  document.getElementById("name").textContent = someData.players[i].player.name
+  document.getElementById("position").textContent = someData.players[i].player.position
+  getimage(someData.players[i].player.name).then((response) => console.log(response))
+  
+
+
+
+}
+
+
 const options = {
   method: "GET",
   headers: {
@@ -6,17 +20,24 @@ const options = {
   },
 };
 
-fetch("https://footapi7.p.rapidapi.com/api/team/1644/players", options)
-  .then((response) => response.json())
-  .then((response) => {
-    document.getElementById("team").textContent =
-      response.players[0].player.team.name;
+ fetch("https://footapi7.p.rapidapi.com/api/team/1644/players", options)
+.then((response) => response.json())
+.then((response) => {
+    localStorage.setItem("response", JSON.stringify(response));
+  console.log(response);
 
-    let text = document.getElementById("test").textContent;
-    response.players.forEach((player) => {
-      document.getElementById("test").textContent =
-        document.getElementById("test").textContent + " " + player.player.name;
-    });
-    console.log(response);
-  })
-  .catch((err) => console.error(err));
+})
+
+
+
+
+async function getimage(name){
+  await fetch("http://api.scraperapi.com/?api_key=cde13e1d2d32e956e933f840306a667c&url=https://keywordimage.com/image.php?q="+name+"/ip&render=true")
+.then((response) => response.text())
+.then((response) => {
+
+
+  let result = response.substring(35,response.length-16)
+  return result;
+
+})}
