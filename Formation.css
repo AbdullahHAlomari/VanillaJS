@@ -16,12 +16,13 @@
 
 
 body {
-  background: #0575E6;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021B79, #0575E6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    54deg,
+    rgba(213, 211, 255, 1) 0%,
+    rgba(188, 214, 255, 1) 56%,
+    rgba(137, 79, 219, 1) 100%
+  );
+  background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -313,9 +314,11 @@ body {
   display: flex;
   margin: 40px auto;
   padding: 10px 40px;
+  
 }
 
 .btn-group {
+  
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1f);
@@ -327,12 +330,14 @@ body {
   display: flex;
   margin: 40px auto;
   padding: 10px 40px;
+  background-color: rgb(139, 2, 25);
 }
 
 .dropdown button {
   display: flex;
   margin: 40px auto;
   padding: 10px 40px;
+  background-color: rgb(70, 70, 139);
 
 }
 

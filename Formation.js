@@ -39,6 +39,8 @@ function getTeamInfo(teamid){
         
                 //store the array in local storage
                 localStorage.setItem("teaminfo", JSON.stringify(players));
+
+                
                 var data = JSON.parse(localStorage.getItem("teaminfo"))
 
              
@@ -46,8 +48,10 @@ function getTeamInfo(teamid){
 
                  //this loop creates a popover instance for each player when you select a team       
                 let playerelement = document.getElementsByClassName("player");
+              
                 for (var i = 0; i < playerelement.length; i++) {
                         console.log(playerelement[i].id); 
+
                         new bootstrap.Popover(document.getElementById(playerelement[i].id), {
                                 html: true,
                                 title: "<h3>"+data[i].name+"</h3>",
@@ -56,7 +60,7 @@ function getTeamInfo(teamid){
                         }); 
                             
                     }
-              
+
             
                 
                 
@@ -67,8 +71,7 @@ function getTeamInfo(teamid){
         
         
         
-        
-     
+let currentFormation = 5;
    
  //this function gets the team ID if you want to search for a team by name 
 function getTeamID(teamName){
@@ -101,10 +104,12 @@ function getTeamID(teamName){
 //The value of i corresponds to the specific tactic and inside each if statement the css coordinates change accordingly
 function formation(i){
 
-
+        currentFormation=i; 
     if(i===2){
 
 
+        document.getElementById("cardtitle").textContent= "Defending"
+        document.getElementById("cardinfo").textContent= "The 4-5-1 is a classic but still prevalent defensive system. This formation will be effective if you want to play a defensive pressure-oriented counterattacking game. The main goal of this strategy is to dominate the midfield by outnumbering the opposition while maintaining a reasonably strong defense at the back. In a 4-5-1 soccer format, you need 4 commanding center-backs. Ideally, the CB's need to be tall, strong, and fast. The CB's also need to have excellent communication skills as they will be organizing the defense and urging the central midfielders not to drop too deep."
 
             document.getElementById("lb").style.top='35%'
             document.getElementById("lb").style.left='14%'
@@ -150,6 +155,9 @@ function formation(i){
     }
 
     if(i===1){
+        document.getElementById("cardtitle").textContent= "What is a mid-block?"
+        document.getElementById("cardinfo").textContent= "A mid-block is an out-of-possession strategy focusing on protecting the middle third of the pitch. The priority is to remain compact enough to stop the opposition from playing through the team. The most attacking players do not engage the opposition too high up the pitch, and the defensive line does not drop too deep towards their own goal. Some space is left in behind the back line, in which the goalkeeper can sweep up.?"
+
 
             document.getElementById("lb").style.top='48%'
             document.getElementById("lb").style.left='2%'
@@ -195,6 +203,8 @@ function formation(i){
 
 
     if(i===0){
+        document.getElementById("cardtitle").textContent= "Attacking"
+        document.getElementById("cardinfo").textContent= "The 4-4-2 is a formation in football that is made up of three distinct lines. The back line of four defenders comprises two centre-backs and two full-backs. Ahead of them, a midfield unit of four features two players in the middle and one on each side. The front line of two is formed by two centre-forwards who, in attack, provide both height and goalscoring threat."
 
         document.getElementById("lb").style.top='48%'
         document.getElementById("lb").style.left='2%'
@@ -239,6 +249,9 @@ function formation(i){
 
 //reset the layout
 if(i===5){
+
+        document.getElementById("cardtitle").textContent= "Select a Tactic!"
+        document.getElementById("cardinfo").textContent= ""
 
     document.getElementById("lb").style.top='0%'
     document.getElementById("lb").style.left='0%'
