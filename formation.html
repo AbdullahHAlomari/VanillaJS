@@ -27,7 +27,7 @@
     />
     <link rel="stylesheet" href="landingcss.css" />
     <link rel="stylesheet" href="Formation.css" />
-    v
+
     <!-- css  -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +35,46 @@
     <title>Coach Academy</title>
   </head>
   <body>
-    
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">CA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="landingpage.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formation.html">formations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="weather.html">About us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-info" type="button">
+              <a class="nav-link" href="contactus.html">Contact</a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <div class="container-fluid">
       <div class="row">
@@ -76,15 +115,15 @@
     </div>
 
     <div class="dropdown">
-       <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Pick a Team
-        </button>
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Pick a Team
+      </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li>
           <a onclick="getTeamInfo('1644')" class="dropdown-item" href="#"
@@ -137,7 +176,6 @@
         >
           Defense
         </button>
-       
       </div>
     </div>
 
@@ -148,6 +186,53 @@
         </button>
       </p>
     </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #ececec">
+      <!-- container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://facebook.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://twitter.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://instagram.com"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2023 Copyright:
+        <a class="text-dark" href="#">Coach Academy</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
