@@ -38,7 +38,7 @@ v
 
        
             
-
+       
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Pick a Team
@@ -49,61 +49,54 @@ v
             <li><a  onclick ="getTeamInfo('17')" class="dropdown-item" href="#">Manchester City</a></li>
           </ul>
         </div>
-   
-        <div class="cardcont">
 
-          <div class="mycards">
-            <div class="img-section img-one"></div>
-            <div class="contents">
-              <h2 id = "cardtitle">Select a Tactic!</h2>
-              <p id="cardinfo">
-               
-              </p>
-           
-            </div>
+
+        <div class = "container-fluid">
+          <div class = "row">
+            <div class = col-md-8>  <div class="wrapper">
+              <div class="campo">
+                   <div class="semi1"></div>
+                   <div class="semi2"></div>
+                   <div class="divisoria"></div>
+                   <div class="interior"></div>
+                   <div class="penalty"></div>           
+                   <div type="button" id ="gk" class ="player"></div>
+                   <div type="button" id="cb" class ="player"></div>
+                   <div type="button"id="lb" class ="player"></div>
+                   <div  type="button"id="rb" class ="player"></div>
+                   <div type="button" id="lwb"class ="player"></div>
+                   <div  type="button" id="dm"  class ="player"></div>
+                   <div  type="button"id="rwb"class ="player"></div>
+                   <div type="button" id="lm"class ="player"></div>
+                   <div type="button" id="cm"class ="player"></div>
+                   <div type="button" id="rm"class ="player"></div>
+                   <div type="button" id="amr"class ="player"></div>
+                </div>
+               </div></div>
+            <div class = col-md-4>
+              <div class="cardcont">
+      
+                <div class="mycards">
+                  <div class="img-section img-one"></div>
+                  <div class="contents">
+                    <h2 id = "cardtitle">Select a Tactic!</h2>
+                    <p id="cardinfo">
+                     
+                    </p>
+                 
+                  </div>
+                </div>
+              </div></div>
+
+
           </div>
         </div>
+
+
+
+
+
       
-          <center>
-            <div class="wrapper">
-            <div class="campo">
-                 <div class="semi1"></div>
-                 <div class="semi2"></div>
-                 <div class="divisoria"></div>
-                 <div class="interior"></div>
-                 <div class="penalty"></div>           
-                 <div type="button" id ="gk" class ="player"></div>
-                 <div type="button" id="cb" class ="player"></div>
-                 <div type="button"id="lb" class ="player"></div>
-                 <div  type="button"id="rb" class ="player"></div>
-                 <div type="button" id="lwb"class ="player"></div>
-                 <div  type="button" id="dm"  class ="player"></div>
-                 <div  type="button"id="rwb"class ="player"></div>
-                 <div type="button" id="lm"class ="player"></div>
-                 <div type="button" id="cm"class ="player"></div>
-                 <div type="button" id="rm"class ="player"></div>
-                 <div type="button" id="amr"class ="player"></div>
-              </div>
-             </div>
-        
-            </center>
-            
-            
-            <div class = "formations">
-              <div class="btn-group">
-
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                  <button  id = "A" onclick ="formation(0)" style="background-color:#4F7EDC ;color : white" type="button" class="btn btn-outline-primary">Attack</button>
-                  <button  id ="M" onclick ="formation(1)" style="background-color:#4F7EDC ;color : white" type="button" class="btn btn-outline-primary">MID</button>
-                  <button id="D"  onclick ="formation(2)" style="background-color:#4F7EDC ;color : white"  type="button" class="btn btn-outline-primary">Defense</button>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="reset">
-            <p id="reset1" ><button type="button"  onclick ="formation(5)" class="btn btn-danger">Reset</button></p>
-          </div>
 
 
 
