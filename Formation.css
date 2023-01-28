@@ -3,16 +3,17 @@
   margin: 0;
 }
 
-.formations {
-  width: 80%;
 
-  margin: 20px auto;
-}
-.formations .btn-group{
+.formations {
+
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+
 }
+
+
+
+
 
 body {
   background: linear-gradient(
@@ -25,10 +26,10 @@ body {
 }
 
 .wrapper {
-  width: 80%;
-  /* margin-top: 40px; */
+  width: 60%;
+  margin-top: 40px;
   padding: 5px 10px;
-  background-color: #17191f;
+  background-color: #17191F;
   border-radius: 5px;
 }
 
@@ -42,10 +43,11 @@ body {
   padding: 0 0 60% 0;
   /*background: green;*/
   /* background-color: rgb(27,31,38); */
-  background-color: #17191f;
+  background-color: #17191F;
 }
-.campo div {
+.campo div{
   transition: 2s;
+
 }
 
 .interior,
@@ -72,7 +74,7 @@ body {
   display: block;
   width: 0;
   height: 100%;
-  margin-left: 0.5px;
+  margin-left: .5px;
   border: 0.5px solid #323642;
 }
 
@@ -82,7 +84,7 @@ body {
   height: 0;
   margin: -8% 0 0 -8%;
   margin-top: calc(-8% - 4px);
-  margin-left: calc(-8% - 0.5px);
+  margin-left: calc(-8% - .5px);
   padding-bottom: 17%;
   border-radius: 50%;
   border: 1px solid #323642;
@@ -106,22 +108,6 @@ body {
   left: auto;
   right: -2px;
 }
-.row {
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-.cardcount {
-  width: 85%;
-  /* height: 500px; */
-  /* display: none; */
-  /* border-radius: 15px; */
-}
-.cardcount .contents {
-  height: 200px;
-  text-overflow: clip;
-  overflow-x: hidden;
-}
 
 .interior:before,
 .interior:after {
@@ -134,7 +120,7 @@ body {
   width: 16%;
   height: 55%;
   /*background: rgb(27,31,38);*/
-  background-color: #17191f;
+  background-color: #17191F;
   border: 1px solid #323642;
 }
 
@@ -167,11 +153,7 @@ body {
   left: auto;
   right: 5%;
 }
-.color {
-  color: rgb(53, 40, 231);
-  font-size: 20px;
-  text-align: center;
-}
+.color{color:rgb(53, 40, 231); font-size: 20px; text-align: center; }
 #gk {
   content: "";
   position: absolute;
@@ -180,7 +162,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -194,7 +176,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -208,7 +190,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -222,7 +204,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -236,7 +218,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -250,7 +232,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -264,7 +246,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -278,7 +260,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -292,7 +274,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -306,7 +288,7 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
@@ -320,23 +302,28 @@ body {
   display: block;
   width: 3%;
   height: 5%;
-  background-color: #4f7edc;
+  background-color: #4F7EDC;
   border: 1px solid #324978;
   border-radius: 50%;
   z-index: 2;
 }
 
+
+
 .reset button {
   display: flex;
   margin: 40px auto;
   padding: 10px 40px;
+  
 }
 
 .btn-group {
+  
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1f);
   gap: 30px;
+
 }
 
 .reset button {
@@ -351,4 +338,6 @@ body {
   margin: 40px auto;
   padding: 10px 40px;
   background-color: rgb(70, 70, 139);
+
 }
+

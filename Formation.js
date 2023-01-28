@@ -255,8 +255,8 @@ function formation(i){
 //reset the layout
 if(i===5){
 
-    document.getElementById("cardtitle").textContent= "Select a Tactic!"
-    document.getElementById("cardinfo").textContent= ""
+        document.getElementById("cardtitle").textContent= "Select a Tactic!"
+        document.getElementById("cardinfo").textContent= ""
 
     document.getElementById("lb").style.top='0%'
     document.getElementById("lb").style.left='0%'
