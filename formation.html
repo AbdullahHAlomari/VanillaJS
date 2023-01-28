@@ -36,8 +36,19 @@
 
        
             
-          
 
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick a Team
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a  onclick ="getTeamInfo('1644')" class="dropdown-item" href="#">PSG</a></li>
+            <li><a   onclick ="getTeamInfo('2817')"class="dropdown-item" href="#">Barcelona</a></li>
+            <li><a  onclick ="getTeamInfo('17')" class="dropdown-item" href="#">Manchester City</a></li>
+          </ul>
+        </div>
+
+      
           <center>
             <div class="wrapper">
             <div class="campo">
@@ -46,17 +57,17 @@
                  <div class="divisoria"></div>
                  <div class="interior"></div>
                  <div class="penalty"></div>           
-                 <div id = "gk" class="gk"></div>
-                 <div class="cb"></div>
-                 <div class="lb"></div>
-                 <div class="rb"></div>
-                 <div class="lwb"></div>
-                 <div class="dm"></div>
-                 <div class="rwb"></div>
-                 <div class="lm"></div>
-                 <div class="cm"></div>
-                 <div class="rm"></div>
-                 <div class="amr"></div>
+                 <div type="button" id ="gk" class ="player"></div>
+                 <div type="button" id="cb" class ="player"></div>
+                 <div type="button"id="lb" class ="player"></div>
+                 <div  type="button"id="rb" class ="player"></div>
+                 <div type="button" id="lwb"class ="player"></div>
+                 <div  type="button" id="dm"  class ="player"></div>
+                 <div  type="button"id="rwb"class ="player"></div>
+                 <div type="button" id="lm"class ="player"></div>
+                 <div type="button" id="cm"class ="player"></div>
+                 <div type="button" id="rm"class ="player"></div>
+                 <div type="button" id="amr"class ="player"></div>
               </div>
              </div>
             </center>
@@ -80,19 +91,6 @@
 
 
 
-
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Pick a Team
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a  onclick ="getTeamInfo('1644')" class="dropdown-item" href="#">PSG</a></li>
-              <li><a   onclick ="getTeamInfo('2817')"class="dropdown-item" href="#">Barcelona</a></li>
-              <li><a  onclick ="getTeamInfo('17')" class="dropdown-item" href="#">Manchester City</a></li>
-            </ul>
-          </div>
-
-          
 
 
       <script
