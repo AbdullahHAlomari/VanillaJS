@@ -73,7 +73,7 @@ function getTeamInfo(teamid){
         
 let currentFormation = 5;
    
- //this function gets the team ID if you want to search for a team by name 
+ //this function gets the team ID if you want to search for a team by name (we don't need this unless we add a search by team element)
 function getTeamID(teamName){
 
         const options = {
@@ -104,7 +104,10 @@ function getTeamID(teamName){
 //The value of i corresponds to the specific tactic and inside each if statement the css coordinates change accordingly
 function formation(i){
 
+
         currentFormation=i; 
+
+        //defense layout
     if(i===2){
 
 
@@ -154,6 +157,7 @@ function formation(i){
 
     }
 
+    //mid layout
     if(i===1){
         document.getElementById("cardtitle").textContent= "What is a mid-block?"
         document.getElementById("cardinfo").textContent= "A mid-block is an out-of-possession strategy focusing on protecting the middle third of the pitch. The priority is to remain compact enough to stop the opposition from playing through the team. The most attacking players do not engage the opposition too high up the pitch, and the defensive line does not drop too deep towards their own goal. Some space is left in behind the back line, in which the goalkeeper can sweep up.?"
@@ -201,8 +205,9 @@ function formation(i){
     }
 
 
-
+    //attack layout
     if(i===0){
+
         document.getElementById("cardtitle").textContent= "Attacking"
         document.getElementById("cardinfo").textContent= "The 4-4-2 is a formation in football that is made up of three distinct lines. The back line of four defenders comprises two centre-backs and two full-backs. Ahead of them, a midfield unit of four features two players in the middle and one on each side. The front line of two is formed by two centre-forwards who, in attack, provide both height and goalscoring threat."
 
