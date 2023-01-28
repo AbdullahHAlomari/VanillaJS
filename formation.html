@@ -26,6 +26,8 @@
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
           crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="landingcss.css" />
+v
         <!-- css  -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,39 +38,73 @@
 
        
             
-          
+       
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick a Team
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a  onclick ="getTeamInfo('1644')" class="dropdown-item" href="#">PSG</a></li>
+            <li><a   onclick ="getTeamInfo('2817')"class="dropdown-item" href="#">Barcelona</a></li>
+            <li><a  onclick ="getTeamInfo('17')" class="dropdown-item" href="#">Manchester City</a></li>
+          </ul>
+        </div>
 
-          <center>
-            <div class="wrapper">
-            <div class="campo">
-                 <div class="semi1"></div>
-                 <div class="semi2"></div>
-                 <div class="divisoria"></div>
-                 <div class="interior"></div>
-                 <div class="penalty"></div>           
-                 <div id = "gk" class="gk"></div>
-                 <div class="cb"></div>
-                 <div class="lb"></div>
-                 <div class="rb"></div>
-                 <div class="lwb"></div>
-                 <div class="dm"></div>
-                 <div class="rwb"></div>
-                 <div class="lm"></div>
-                 <div class="cm"></div>
-                 <div class="rm"></div>
-                 <div class="amr"></div>
-              </div>
-             </div>
-            </center>
-            
-            
+
+        <div class = "container-fluid">
+          <div class = "row">
+            <div class = col-md-8>  <div class="wrapper">
+              <div class="campo">
+                   <div class="semi1"></div>
+                   <div class="semi2"></div>
+                   <div class="divisoria"></div>
+                   <div class="interior"></div>
+                   <div class="penalty"></div>           
+                   <div type="button" id ="gk" class ="player"></div>
+                   <div type="button" id="cb" class ="player"></div>
+                   <div type="button"id="lb" class ="player"></div>
+                   <div  type="button"id="rb" class ="player"></div>
+                   <div type="button" id="lwb"class ="player"></div>
+                   <div  type="button" id="dm"  class ="player"></div>
+                   <div  type="button"id="rwb"class ="player"></div>
+                   <div type="button" id="lm"class ="player"></div>
+                   <div type="button" id="cm"class ="player"></div>
+                   <div type="button" id="rm"class ="player"></div>
+                   <div type="button" id="amr"class ="player"></div>
+                </div>
+               </div></div>
+            <div class = col-md-4>
+              <div class="cardcont">
+      
+                <div class="mycards">
+                  <div class="img-section img-one"></div>
+                  <div class="contents">
+                    <h2 id = "cardtitle">Select a Tactic!</h2>
+                    <p id="cardinfo">
+                     
+                    </p>
+                 
+                  </div>
+                </div>
+              </div></div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+      
+   
             <div class = "formations">
               <div class="btn-group">
 
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                  <button  id = "A" onclick ="formation(0)" style="background-color:blue ;color : white" type="button" class="btn btn-outline-primary">Attack</button>
-                  <button  id ="M" onclick ="formation(1)" style="background-color:blue ;color : white" type="button" class="btn btn-outline-primary">MID</button>
-                  <button id="D"  onclick ="formation(2)" style="background-color:blue ;color : white"  type="button" class="btn btn-outline-primary">Defense</button>
+                  <button  id = "A" onclick ="formation(0)" style="background-color:#4F7EDC ;color : white" type="button" class="btn btn-outline-primary">Attack</button>
+                  <button  id ="M" onclick ="formation(1)" style="background-color:#4F7EDC ;color : white" type="button" class="btn btn-outline-primary">MID</button>
+                  <button id="D"  onclick ="formation(2)" style="background-color:#4F7EDC ;color : white"  type="button" class="btn btn-outline-primary">Defense</button>
                 </div>
               </div>
 
@@ -78,21 +114,6 @@
             <p id="reset1" ><button type="button"  onclick ="formation(5)" class="btn btn-danger">Reset</button></p>
           </div>
 
-
-
-
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Pick a Team
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a  onclick ="getTeamInfo('1644')" class="dropdown-item" href="#">PSG</a></li>
-              <li><a   onclick ="getTeamInfo('2817')"class="dropdown-item" href="#">Barcelona</a></li>
-              <li><a  onclick ="getTeamInfo('17')" class="dropdown-item" href="#">Manchester City</a></li>
-            </ul>
-          </div>
-
-          
 
 
       <script
