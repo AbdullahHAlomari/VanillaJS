@@ -311,6 +311,9 @@ body {
   border-radius: 50%;
   z-index: 2;
 }
+  .mycards{
+    transition: 1s;
+  }
 
 #amr {
   content: "";
