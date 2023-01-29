@@ -1,5 +1,5 @@
 Coach Academy
 
-A learning website for beginner football coaches to develop their tactical skills and knowledge.
+A website for beginner football coaches to develop their tactical skills and knowledge.
 
 
