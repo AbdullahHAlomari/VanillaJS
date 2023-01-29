@@ -124,3 +124,6 @@ textarea:valid ~ label {
   border-radius: 30px;
   overflow: hidden;
 }
+.d-flex{
+  justify-content: flex-end;
+}

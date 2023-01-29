@@ -353,6 +353,16 @@ body {
   background-color: rgb(70, 70, 139);
 }
 
+
+.bi{
+  width: 100%;
+  text-align: center;
+}
+.h1{
+  font-weight: bold;
+  font-size: 45px;
+}
+
 @media screen and (max-width: 390px) {
   .row {
     height: 660px;
