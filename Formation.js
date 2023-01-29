@@ -73,8 +73,7 @@ function getTeamInfo(teamid){
         
 let currentFormation = 5;
    
- //this function gets the team ID if you want to search for a team by name (we don't need this unless we add a search by team element)
-function getTeamID(teamName){
+ //this gets the team ID if you want to search for a team by name (we don't need this unless we add a search by team element)
 
         const options = {
           method: "GET",
@@ -85,7 +84,7 @@ function getTeamID(teamName){
         };
 
         
-         fetch("https://footapi7.p.rapidapi.com/api/search/"+teamName, options)
+         fetch("https://footapi7.p.rapidapi.com/api/search/"+"liverpool", options)
         .then((response) => response.json())
         .then((response) => {
                 
@@ -93,7 +92,7 @@ function getTeamID(teamName){
           return response.results[0].entity.id;
           
         
- })}
+ })
 
 
 
