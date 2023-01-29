@@ -26,7 +26,7 @@ body {
 
 .wrapper {
   width: 80%;
-  /* margin-top: 40px; */
+  margin-top: 40px; 
   padding: 5px 10px;
   background-color: #17191f;
   border-radius: 5px;
@@ -367,3 +367,6 @@ body {
     height: 135px;
   }
 }
+
+.title h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 100px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
